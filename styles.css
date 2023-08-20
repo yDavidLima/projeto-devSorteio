@@ -8,6 +8,8 @@
 
 body{
     background-color: black;
+    height: 100vh;
+    width: 100vw;
 }
 
 img {
@@ -84,3 +86,106 @@ button:active{
     color: #AEC346;
     text-shadow: 0.1em 0.1em 0.2em  rgba(174, 195, 70, 0.35); 
 }
+
+@media screen and (max-width: 544px ) {
+
+
+    * {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh; /* Adjust margin for smaller screens */
+        max-width: 90%; /* Use max-width for responsive images */
+    }
+    
+    p {
+        color: white;
+        text-align: center; /* Center-align text */
+        margin: 10px 0;
+    }
+    
+    .sort {
+        margin-top: 3vh; /* Adjust margin for smaller screens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .input-min,
+    .input-max {
+        margin: 5px;
+        height: 35px;
+        max-width: 90%; /* Use max-width for responsive input fields */
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 5px;
+        border: solid 1px rgba(255, 255, 255, 0.2);
+        padding: 5px; /* Add padding for better spacing */
+    }
+    
+    label {
+        text-align: center; /* Center-align labels */
+        margin: 5px;
+    }
+    
+    button {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+        width: 150px;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+        background-color: #AEC346;
+        color: white;
+        box-shadow: 0px 6px 20px rgba(174, 195, 70, 0.35);
+        cursor: pointer;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    button:hover {
+        opacity: 0.8;
+    }
+    
+    button:active {
+        opacity: 0.9;
+    }
+    
+    .generato {
+        font-size: 7vw; /* Use viewport units for font-size */
+        color: #AEC346;
+        text-shadow: 0.1em 0.1em 0.2em rgba(174, 195, 70, 0.35);
+    }
+    
+
+
+
+
+
+}
+
+
+
+
+
+
